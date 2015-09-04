@@ -1,0 +1,132 @@
+$primary-color: linen;
+$body-font: 'Lato', sans-serif;
+$light-opacity: rgba(255, 255, 255, 0.5);
+
+
+$blue: #0478A7;
+
+
+a, a:hover, a:visited, a:active {
+  text-decoration: none;
+}
+
+body {
+  background-color: $blue;
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  background-color: white;
+  border-top: solid 0.3em $blue;
+
+  nav {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+      vertical-align: middle;
+      color: black;
+    }
+
+    a:hover {
+      color: $blue;
+      font-weight: bolder;
+      // transition: 0.2s;
+    }
+  }
+
+} 
+
+.landing-panel {
+  background: url("http://intrawallpaper.com/wp-content/uploads/Lenovo-wallpaper-6.jpg");
+  height: 45em;
+  text-align: center;
+  
+  h1 {
+    margin: 0;
+    color: white;
+    // padding-top: 6em;
+    font-size: 3em;
+  }
+
+  
+
+
+  p {
+    color: white
+  }
+
+  .buy-tkts-btn {
+    border: solid 0.2em $blue;
+    padding: 0.6em 3em 0.6em 3em;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: $blue;
+    font-size: 1.2em;
+    margin-top: 2em;
+  }
+
+  .buy-tkts-btn:hover {
+    background-color: $blue;
+    color: black;
+    transition: 0.3s;
+    font-weight: bolder;
+  }
+
+  .down-btn {
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    // color: white;
+    color: $light-opacity;
+    font-size: 2em;
+    padding-top: 5em;
+  }
+}
+
+.twitter-panel {
+  height: 40em;
+  margin: 0 auto;
+
+}
+
+.speakers-panel {
+  height: 40em;
+  background-color: white;
+  margin: 0 auto;
+
+}
+
+.schedule-panel {
+  height: 40em;
+  margin: 0 auto;
+
+}
+
+.sponsors-panel {
+  height: 40em;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.contact-panel {
+  height: 40em;
+  margin: 0 auto;
+
+}
+
+.panel-heading {
+  font-size: 2em;
+  text-align: center;
+
+}
+
+
+
+
