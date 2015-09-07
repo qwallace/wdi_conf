@@ -148,17 +148,18 @@
       display: flex;
       flex-direction: row;
       justify-content: center; }
-    .contact-panel .map {
+    .contact-panel .maps {
       margin-left: 2%;
       margin-right: 2%;
       width: 40%;
-      height: 20em;
-      border: solid 1px black; }
+      max-height: 100%;
+      border: solid 3px white; }
     .contact-panel .contact-form {
       margin-left: 2%;
       margin-right: 2%;
       width: 40%; }
       .contact-panel .contact-form .contact-input {
+        max-width: 100%;
         width: 100%;
         background-color: transparent;
         outline: none;
@@ -168,6 +169,8 @@
         padding: 0.2em 0em 0.2em 0.2em;
         font-family: "Lato", sans-serif;
         font-weight: 300; }
+      .contact-panel .contact-form p:last-child {
+        margin-bottom: 0; }
     .contact-panel .submit-btn {
       border: solid 3px white;
       padding: 0.5em 2em 0.5em 2em;
