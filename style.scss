@@ -1,146 +1,295 @@
 $twitter-blue: #55ACEE;
 $body-font: 'Lato', sans-serif;
-$light-opacity: rgba(255, 255, 255, 0.5);
+$light-opacity: rgba(255, 255, 255, 0.8);
 
 
-$blue: #0478A7;
+$light-grey: #D0D0D0;
+$dark-grey: #505050;
+$blue: #00D2FF;
+$sponsor-img-grey: #D0D0D0;
+$background-color: rgba(0, 210, 255, 0.4);
 
-
-a, a:hover, a:visited, a:active {
-  text-decoration: none;
-}
-
-body {
-  background-color: $blue;
-  margin: 0px;
-  font-family: 'Lato', sans-serif;
-}
-
-header {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-top: solid 0.3em $blue;
-
-  nav {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    text-align: center;
-
-    a {
-      text-decoration: none;
-      padding-left: 0.5em;
-      padding-right: 0.5em;
-      vertical-align: middle;
-      color: white;
-    }
-
-    a:hover {
-      color: $blue;
-      font-weight: bolder;
-      border-bottom: solid 2px $blue;
-      padding-bottom: 1em;
-      // transition: 0.2s;
-    }
-  }
-
-} 
-
-.landing-panel {
-  background: url("http://intrawallpaper.com/wp-content/uploads/Lenovo-wallpaper-6.jpg");
-  height: 45em;
-  text-align: center;
+@media screen and (max-width: 1500px) {
   
-  h1 {
-    margin: 0;
-    color: white;
-    // padding-top: 6em;
-    font-size: 3em;
-  }
-
-  .wdi-heading {
-    position: absolute;
-  }
-  .conf-heading {
-    position: relative;
-    // margin-top: -1em;
-
-  }
-  
-
-
-  p {
-    color: white
-  }
-
-  .buy-tkts-btn {
-    border: solid 0.2em $blue;
-    padding: 0.6em 3em 0.6em 3em;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: $blue;
-    font-size: 1.2em;
-    margin-top: 2em;
-  }
-
-  .buy-tkts-btn:hover {
-    background-color: $blue;
-    color: $light-opacity;
-    transition: 0.3s;
-    font-weight: bolder;
-  }
-
-  .down-btn {
-    display: block;
+// ALL PAGES =======================================================
+  body {
     margin: 0 auto;
-    outline: none;
-    border: none;
-    background-color: transparent;
-    // color: white;
-    color: $light-opacity;
+  }
+
+  a, a:hover, a:visited, a:active {
+    text-decoration: none;
+  }
+
+  body {
+    // background-color: $blue;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+  }
+
+
+  .panel-heading {
     font-size: 2em;
-    padding-top: 5em;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: solid 2px #505050 ;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    width: 200px;
+    color: $dark-grey;
   }
-  .down-btn:hover i {
-    border: solid 2px $light-opacity;
-    border-radius: 50%;
-    padding: 4px;
+
+  .header {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-top: solid 0.3em $blue;
+
+    nav {
+      padding-top: 1em;
+      padding-bottom: 1em;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        vertical-align: middle;
+        color: white;
+      }
+
+      a:hover {
+        color: $blue;
+        font-weight: bolder;
+        border-bottom: solid 2px $blue;
+        padding-bottom: 1em;
+        // transition: 0.2s;
+      }
+    }
+
+  } 
+
+// LANDING ===================================================
+
+  .landing-panel {
+    background: url("/images/cityscape.jpg");
+    background-size: cover;
+    height: 50em;
+    text-align: center;
+    
+    .logo {
+      padding-top: 2em;
+    }
+
+    .dates {
+      padding-bottom: 0.5em;
+      font-size: 2em;
+      color: $light-grey;
+      p {
+        padding: 0;
+      }
+    }
+
+    p {
+      color: white
+    }
+
+    .buy-tkts-btn {
+      border: solid 0.2em $blue;
+      padding: 0.6em 3em 0.6em 3em;
+      background-color: rgba(0, 0, 0, 0.3);
+      color: $blue;
+      font-size: 1.2em;
+      margin-top: 2em;
+    }
+
+    .buy-tkts-btn:hover {
+      background-color: $blue;
+      color: white;
+      transition: 0.3s;
+      font-weight: bolder;
+    }
+
+    .down-btn {
+      display: block;
+      margin: 0 auto;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      // color: white;
+      color: $light-opacity;
+      font-size: 2em;
+      padding-top: 5em;
+    }
+    .down-btn:hover i {
+      border: solid 2px $light-opacity;
+      border-radius: 50%;
+      padding: 4px;
+      // transition: 0.1s;
+    }
   }
+
+  .twitter-panel {
+    height: 40em;
+    margin: 0 auto;
+    background-color: $background-color;
+
+  }
+
+  // SPEAKERS =======================================================
+
+  .speakers-panel {
+    height: 35em;
+    // background-color: white;
+    margin: 0 auto;
+
+    .speakers-div {
+      margin-top: 5em; 
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .speaker-tile {
+        display: inline-block;
+        margin-right: 1%; 
+        margin-left: 1%;
+      }
+      
+      .speaker-avatar {
+          border-radius: 100%;
+          border: 2px solid #00D2FF;
+          filter: grayscale(50%)
+          // filter: drop-shadow(16px 16px 20px blue);
+          
+      }
+      
+      .speaker-tile .speaker-name {
+          text-align: center;
+          color: grey;
+          font-size: 1.3em; 
+      }
+      
+      .speaker-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        i {
+          font-size: 1.5em;
+          color: #00D2FF;
+          text-align: center; 
+          padding: 0em 0.2em 0em 0.2em;
+        }
+      }
+      
+      // .first {
+      //   margin-left: 4%; 
+      // }
+      
+      // .last {
+      //   margin-right: 3%; 
+      // }
+    }
+
+  }
+
+// SCHEDULE =======================================================
+
+  .schedule-panel {
+    height: 40em;
+    margin: 0 auto;
+    background-color: $background-color;
+
+  }
+
+// SPONSORS =======================================================
+
+  .sponsors-panel {
+    height: 25em;
+    background-color: white;
+    text-align: center;
+    // margin: 0 auto;
+
+    .sponsor-img {
+      // text-align: center;
+
+      height: 12em;
+      margin: 0em 1em 0em 1em;
+    }
+
+  }
+
+// CONTACT =======================================================
+
+  .contact-panel {
+    height: 40em;
+    margin: 0 auto;
+    background-color: $background-color;
+    // text-align: center;
+      // display: flex;
+      // flex-flow: row-wrap;
+
+    p {
+      margin-top: 0px;
+    }
+
+    .col-span {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+    }
+
+    .map {
+      margin-left: 2%;
+      margin-right: 2%;
+      width: 40%;
+      height: 20em;
+      border: solid 1px black;
+    }
+
+    .contact-form {
+      margin-left: 2%;
+      margin-right: 2%;
+      width: 40%;
+
+      .contact-input {
+        width: 100%;
+        background-color: white;
+        outline: none;
+        border: solid 1px $dark-grey;
+        border-radius: 3px;
+        font-size: 1em;
+        padding: 0.2em 0em 0.2em 0.2em;
+        font-family: $body-font;
+        font-weight: 300;
+      }
+    }
+
+    .submit-btn {
+      border: solid 1px;
+      border-radius: 5px;
+      padding: 0.5em 2em 0.5em 2em;
+      font-size: 1em;
+      font-family: $body-font;
+      font-weight: 300;
+      background-color: $light-grey;
+      text-align: center;
+      width: 100%;
+    }
+
+    .submit-btn:hover {
+      font-weight: 400;
+      background-color: transparent;
+    }
+
+  }
+
+
+
+
 }
 
-.twitter-panel {
-  height: 40em;
-  margin: 0 auto;
 
-}
 
-.speakers-panel {
-  height: 40em;
-  background-color: white;
-  margin: 0 auto;
-
-}
-
-.schedule-panel {
-  height: 40em;
-  margin: 0 auto;
-
-}
-
-.sponsors-panel {
-  height: 40em;
-  background-color: white;
-  margin: 0 auto;
-}
-
-.contact-panel {
-  height: 40em;
-  margin: 0 auto;
-
-}
-
-.panel-heading {
-  font-size: 2em;
-  text-align: center;
-
-}
 
 
 

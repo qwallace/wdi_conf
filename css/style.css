@@ -1,92 +1,163 @@
-a, a:hover, a:visited, a:active {
-  text-decoration: none; }
-
-body {
-  background-color: #0478A7;
-  margin: 0px;
-  font-family: 'Lato', sans-serif; }
-
-header {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-top: solid 0.3em #0478A7; }
-  header nav {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    text-align: center; }
-    header nav a {
-      text-decoration: none;
-      padding-left: 0.5em;
-      padding-right: 0.5em;
-      vertical-align: middle;
-      color: white; }
-    header nav a:hover {
-      color: #0478A7;
-      font-weight: bolder;
-      border-bottom: solid 2px #0478A7;
-      padding-bottom: 1em; }
-
-.landing-panel {
-  background: url("http://intrawallpaper.com/wp-content/uploads/Lenovo-wallpaper-6.jpg");
-  height: 45em;
-  text-align: center; }
-  .landing-panel h1 {
-    margin: 0;
-    color: white;
-    font-size: 3em; }
-  .landing-panel .wdi-heading {
-    position: absolute; }
-  .landing-panel .conf-heading {
-    position: relative; }
-  .landing-panel p {
-    color: white; }
-  .landing-panel .buy-tkts-btn {
-    border: solid 0.2em #0478A7;
-    padding: 0.6em 3em 0.6em 3em;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #0478A7;
-    font-size: 1.2em;
-    margin-top: 2em; }
-  .landing-panel .buy-tkts-btn:hover {
-    background-color: #0478A7;
-    color: rgba(255, 255, 255, 0.5);
-    transition: 0.3s;
-    font-weight: bolder; }
-  .landing-panel .down-btn {
-    display: block;
-    margin: 0 auto;
-    outline: none;
-    border: none;
-    background-color: transparent;
-    color: rgba(255, 255, 255, 0.5);
+@media screen and (max-width: 1500px) {
+  body {
+    margin: 0 auto; }
+  a, a:hover, a:visited, a:active {
+    text-decoration: none; }
+  body {
+    margin: 0px;
+    font-family: 'Lato', sans-serif; }
+  .panel-heading {
     font-size: 2em;
-    padding-top: 5em; }
-  .landing-panel .down-btn:hover i {
-    border: solid 2px rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    padding: 4px; }
-
-.twitter-panel {
-  height: 40em;
-  margin: 0 auto; }
-
-.speakers-panel {
-  height: 40em;
-  background-color: white;
-  margin: 0 auto; }
-
-.schedule-panel {
-  height: 40em;
-  margin: 0 auto; }
-
-.sponsors-panel {
-  height: 40em;
-  background-color: white;
-  margin: 0 auto; }
-
-.contact-panel {
-  height: 40em;
-  margin: 0 auto; }
-
-.panel-heading {
-  font-size: 2em;
-  text-align: center; }
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: solid 2px #505050;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    width: 200px;
+    color: #505050; }
+  .header {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-top: solid 0.3em #00D2FF; }
+    .header nav {
+      padding-top: 1em;
+      padding-bottom: 1em;
+      text-align: center; }
+      .header nav a {
+        text-decoration: none;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        vertical-align: middle;
+        color: white; }
+      .header nav a:hover {
+        color: #00D2FF;
+        font-weight: bolder;
+        border-bottom: solid 2px #00D2FF;
+        padding-bottom: 1em; }
+  .landing-panel {
+    background: url("/images/cityscape.jpg");
+    background-size: cover;
+    height: 50em;
+    text-align: center; }
+    .landing-panel .logo {
+      padding-top: 2em; }
+    .landing-panel .dates {
+      padding-bottom: 0.5em;
+      font-size: 2em;
+      color: #D0D0D0; }
+      .landing-panel .dates p {
+        padding: 0; }
+    .landing-panel p {
+      color: white; }
+    .landing-panel .buy-tkts-btn {
+      border: solid 0.2em #00D2FF;
+      padding: 0.6em 3em 0.6em 3em;
+      background-color: rgba(0, 0, 0, 0.3);
+      color: #00D2FF;
+      font-size: 1.2em;
+      margin-top: 2em; }
+    .landing-panel .buy-tkts-btn:hover {
+      background-color: #00D2FF;
+      color: white;
+      transition: 0.3s;
+      font-weight: bolder; }
+    .landing-panel .down-btn {
+      display: block;
+      margin: 0 auto;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 2em;
+      padding-top: 5em; }
+    .landing-panel .down-btn:hover i {
+      border: solid 2px rgba(255, 255, 255, 0.8);
+      border-radius: 50%;
+      padding: 4px; }
+  .twitter-panel {
+    height: 40em;
+    margin: 0 auto;
+    background-color: rgba(0, 210, 255, 0.4); }
+  .speakers-panel {
+    height: 35em;
+    margin: 0 auto; }
+    .speakers-panel .speakers-div {
+      margin-top: 5em;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .speakers-panel .speakers-div .speaker-tile {
+        display: inline-block;
+        margin-right: 1%;
+        margin-left: 1%; }
+      .speakers-panel .speakers-div .speaker-avatar {
+        border-radius: 100%;
+        border: 2px solid #00D2FF;
+        filter: grayscale(50%); }
+      .speakers-panel .speakers-div .speaker-tile .speaker-name {
+        text-align: center;
+        color: grey;
+        font-size: 1.3em; }
+      .speakers-panel .speakers-div .speaker-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+        .speakers-panel .speakers-div .speaker-icons i {
+          font-size: 1.5em;
+          color: #00D2FF;
+          text-align: center;
+          padding: 0em 0.2em 0em 0.2em; }
+  .schedule-panel {
+    height: 40em;
+    margin: 0 auto;
+    background-color: rgba(0, 210, 255, 0.4); }
+  .sponsors-panel {
+    height: 25em;
+    background-color: white;
+    text-align: center; }
+    .sponsors-panel .sponsor-img {
+      height: 12em;
+      margin: 0em 1em 0em 1em; }
+  .contact-panel {
+    height: 40em;
+    margin: 0 auto;
+    background-color: rgba(0, 210, 255, 0.4); }
+    .contact-panel p {
+      margin-top: 0px; }
+    .contact-panel .col-span {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+    .contact-panel .map {
+      margin-left: 2%;
+      margin-right: 2%;
+      width: 40%;
+      height: 20em;
+      border: solid 1px black; }
+    .contact-panel .contact-form {
+      margin-left: 2%;
+      margin-right: 2%;
+      width: 40%; }
+      .contact-panel .contact-form .contact-input {
+        width: 100%;
+        background-color: white;
+        outline: none;
+        border: solid 1px #505050;
+        border-radius: 3px;
+        font-size: 1em;
+        padding: 0.2em 0em 0.2em 0.2em;
+        font-family: "Lato", sans-serif;
+        font-weight: 300; }
+    .contact-panel .submit-btn {
+      border: solid 1px;
+      border-radius: 5px;
+      padding: 0.5em 2em 0.5em 2em;
+      font-size: 1em;
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      background-color: #D0D0D0;
+      text-align: center;
+      width: 100%; }
+    .contact-panel .submit-btn:hover {
+      font-weight: 400;
+      background-color: transparent; } }
