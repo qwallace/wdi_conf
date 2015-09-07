@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="map.js"></script>
   <script src="bundle.js"></script>
 </head>
 
@@ -134,13 +135,14 @@
       </p>
     </div>
 
-    <div class="map">MAP GOES HERE
-    </div>
+    <div class="maps" id="map">MAP GOES HERE</div>
   </div>
   
 </section>
 
 
-
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap">
+    </script>
 </body>
 </html>
