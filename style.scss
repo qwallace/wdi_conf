@@ -4,7 +4,7 @@ $light-opacity: rgba(255, 255, 255, 0.8);
 
 
 $light-grey: #D0D0D0;
-$dark-grey: #505050;
+$dark-grey: #888888;
 $blue: #00D2FF;
 $sponsor-img-grey: #D0D0D0;
 $background-color: rgba(0, 210, 255, 0.4);
@@ -31,10 +31,10 @@ $background-color: rgba(0, 210, 255, 0.4);
     font-size: 2em;
     text-align: center;
     margin: 0 auto;
-    border-bottom: solid 2px #505050 ;
+    border-bottom: solid 2px $dark-grey;
     padding-top: 1em;
     padding-bottom: 0.5em;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     width: 200px;
     color: $dark-grey;
   }
@@ -54,6 +54,7 @@ $background-color: rgba(0, 210, 255, 0.4);
         padding-right: 0.5em;
         vertical-align: middle;
         color: white;
+        font-weight: 300;
       }
 
       a:hover {
@@ -119,18 +120,54 @@ $background-color: rgba(0, 210, 255, 0.4);
       font-size: 2em;
       padding-top: 5em;
     }
-    .down-btn:hover i {
-      border: solid 2px $light-opacity;
-      border-radius: 50%;
-      padding: 4px;
-      // transition: 0.1s;
-    }
   }
 
+  .fa-chevron-down {
+    animation-name: fa-chevron-down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    }
+
+    @keyframes fa-chevron-down {
+      from {
+        transform: translate(0, 0)
+      }
+      65% {
+        transform: translate(0, 15px)
+      }
+      to {
+        transform: translate(0, 0)
+      }
+    }
+
+
+
+  // TWITTER =======================================================
+
   .twitter-panel {
-    height: 40em;
+    height: 35em;
     margin: 0 auto;
     background-color: $background-color;
+    text-align: center;
+    font-weight: 300;
+  
+    .twitter-sections {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .twitter-section-title {
+        font-weight: 400;
+      }
+
+      .twitter-info {
+        width: 10em;
+        margin-left: 3.5em;
+        margin-right: 3.5em;
+      }
+
+    }
 
   }
 
@@ -155,16 +192,16 @@ $background-color: rgba(0, 210, 255, 0.4);
       
       .speaker-avatar {
           border-radius: 100%;
-          border: 2px solid #00D2FF;
-          filter: grayscale(50%)
+          border: 2px solid $blue;
+
           // filter: drop-shadow(16px 16px 20px blue);
-          
       }
       
       .speaker-tile .speaker-name {
           text-align: center;
-          color: grey;
-          font-size: 1.3em; 
+          color: $dark-grey;
+          font-size: 1.2em;
+          // font-weight: 300;
       }
       
       .speaker-icons {
@@ -211,7 +248,7 @@ $background-color: rgba(0, 210, 255, 0.4);
     .sponsor-img {
       // text-align: center;
 
-      height: 12em;
+      height: 10em;
       margin: 0em 1em 0em 1em;
     }
 
@@ -253,10 +290,12 @@ $background-color: rgba(0, 210, 255, 0.4);
 
       .contact-input {
         width: 100%;
-        background-color: white;
+        background-color: transparent;
         outline: none;
-        border: solid 1px $dark-grey;
-        border-radius: 3px;
+        border: none;
+        border-bottom: solid 3px white;
+        // border: none;
+        // border-radius: 3px;
         font-size: 1em;
         padding: 0.2em 0em 0.2em 0.2em;
         font-family: $body-font;
@@ -265,25 +304,25 @@ $background-color: rgba(0, 210, 255, 0.4);
     }
 
     .submit-btn {
-      border: solid 1px;
-      border-radius: 5px;
+      border: solid 3px white;
+      // border-radius: 5px;
       padding: 0.5em 2em 0.5em 2em;
       font-size: 1em;
       font-family: $body-font;
-      font-weight: 300;
-      background-color: $light-grey;
+      font-weight: 400;
+      background-color: transparent;
       text-align: center;
-      width: 100%;
+      color: white;
+      // width: 100%;
     }
 
     .submit-btn:hover {
       font-weight: 400;
-      background-color: transparent;
+      background-color: $blue;
+      color: white;
     }
 
   }
-
-
 
 
 }

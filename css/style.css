@@ -10,12 +10,12 @@
     font-size: 2em;
     text-align: center;
     margin: 0 auto;
-    border-bottom: solid 2px #505050;
+    border-bottom: solid 2px #888888;
     padding-top: 1em;
     padding-bottom: 0.5em;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     width: 200px;
-    color: #505050; }
+    color: #888888; }
   .header {
     background-color: rgba(0, 0, 0, 0.4);
     border-top: solid 0.3em #00D2FF; }
@@ -28,7 +28,8 @@
         padding-left: 0.5em;
         padding-right: 0.5em;
         vertical-align: middle;
-        color: white; }
+        color: white;
+        font-weight: 300; }
       .header nav a:hover {
         color: #00D2FF;
         font-weight: bolder;
@@ -70,14 +71,34 @@
       color: rgba(255, 255, 255, 0.8);
       font-size: 2em;
       padding-top: 5em; }
-    .landing-panel .down-btn:hover i {
-      border: solid 2px rgba(255, 255, 255, 0.8);
-      border-radius: 50%;
-      padding: 4px; }
+  .fa-chevron-down {
+    animation-name: fa-chevron-down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; }
+  @keyframes fa-chevron-down {
+    from {
+      transform: translate(0, 0); }
+    65% {
+      transform: translate(0, 15px); }
+    to {
+      transform: translate(0, 0); } }
   .twitter-panel {
-    height: 40em;
+    height: 35em;
     margin: 0 auto;
-    background-color: rgba(0, 210, 255, 0.4); }
+    background-color: rgba(0, 210, 255, 0.4);
+    text-align: center;
+    font-weight: 300; }
+    .twitter-panel .twitter-sections {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .twitter-panel .twitter-sections .twitter-section-title {
+        font-weight: 400; }
+      .twitter-panel .twitter-sections .twitter-info {
+        width: 10em;
+        margin-left: 3.5em;
+        margin-right: 3.5em; }
   .speakers-panel {
     height: 35em;
     margin: 0 auto; }
@@ -92,12 +113,11 @@
         margin-left: 1%; }
       .speakers-panel .speakers-div .speaker-avatar {
         border-radius: 100%;
-        border: 2px solid #00D2FF;
-        filter: grayscale(50%); }
+        border: 2px solid #00D2FF; }
       .speakers-panel .speakers-div .speaker-tile .speaker-name {
         text-align: center;
-        color: grey;
-        font-size: 1.3em; }
+        color: #888888;
+        font-size: 1.2em; }
       .speakers-panel .speakers-div .speaker-icons {
         display: flex;
         flex-direction: row;
@@ -116,7 +136,7 @@
     background-color: white;
     text-align: center; }
     .sponsors-panel .sponsor-img {
-      height: 12em;
+      height: 10em;
       margin: 0em 1em 0em 1em; }
   .contact-panel {
     height: 40em;
@@ -140,24 +160,24 @@
       width: 40%; }
       .contact-panel .contact-form .contact-input {
         width: 100%;
-        background-color: white;
+        background-color: transparent;
         outline: none;
-        border: solid 1px #505050;
-        border-radius: 3px;
+        border: none;
+        border-bottom: solid 3px white;
         font-size: 1em;
         padding: 0.2em 0em 0.2em 0.2em;
         font-family: "Lato", sans-serif;
         font-weight: 300; }
     .contact-panel .submit-btn {
-      border: solid 1px;
-      border-radius: 5px;
+      border: solid 3px white;
       padding: 0.5em 2em 0.5em 2em;
       font-size: 1em;
       font-family: "Lato", sans-serif;
-      font-weight: 300;
-      background-color: #D0D0D0;
+      font-weight: 400;
+      background-color: transparent;
       text-align: center;
-      width: 100%; }
+      color: white; }
     .contact-panel .submit-btn:hover {
       font-weight: 400;
-      background-color: transparent; } }
+      background-color: #00D2FF;
+      color: white; } }
