@@ -1,186 +1,343 @@
-@media screen and (max-width: 1500px) {
-  body {
-    margin: 0 auto; }
-  a, a:hover, a:visited, a:active {
-    text-decoration: none; }
-  body {
-    margin: 0px;
-    font-family: 'Lato', sans-serif; }
-  .panel-heading {
+body {
+  margin: 0 auto; }
+
+a, a:hover, a:visited, a:active {
+  text-decoration: none; }
+
+body {
+  margin: 0px;
+  font-family: 'Lato', sans-serif; }
+
+.panel-heading {
+  font-size: 2em;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: solid 2px #888888;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1.5em;
+  width: 200px;
+  color: #888888; }
+
+.header {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-top: solid 0.3em #00D2FF; }
+  .header nav {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center; }
+    .header nav a {
+      text-decoration: none;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+      vertical-align: middle;
+      color: white;
+      font-weight: 300; }
+    .header nav a:hover {
+      color: #00D2FF;
+      font-weight: bolder;
+      border-bottom: solid 2px #00D2FF;
+      padding-bottom: 1em; }
+
+.landing-panel {
+  background: url("/images/cityscape.jpg");
+  background-size: cover;
+  height: 50em;
+  text-align: center; }
+  .landing-panel .logo {
+    padding-top: 2em; }
+  .landing-panel .dates {
+    padding-bottom: 0.5em;
+    font-size: 2em;
+    color: #D0D0D0; }
+    .landing-panel .dates p {
+      padding: 0; }
+  .landing-panel p {
+    color: white; }
+  .landing-panel .buy-tkts-btn {
+    border: solid 0.2em #00D2FF;
+    padding: 0.6em 3em 0.6em 3em;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #00D2FF;
+    font-size: 1.2em;
+    margin-top: 2em; }
+  .landing-panel .buy-tkts-btn:hover {
+    background-color: #00D2FF;
+    color: white;
+    transition: 0.3s;
+    font-weight: bolder; }
+  .landing-panel .down-btn {
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 2em;
+    padding-top: 5em; }
+
+.fa-chevron-down {
+  animation-name: fa-chevron-down;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; }
+
+@keyframes fa-chevron-down {
+  from {
+    transform: translate(0, 0); }
+  65% {
+    transform: translate(0, 15px); }
+  to {
+    transform: translate(0, 0); } }
+
+.twitter-panel {
+  height: 35em;
+  margin: 0 auto;
+  background-color: rgba(0, 210, 255, 0.4);
+  text-align: center;
+  font-weight: 300; }
+  .twitter-panel .twitter-sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .twitter-panel .twitter-sections .twitter-section-title {
+      font-weight: 400; }
+    .twitter-panel .twitter-sections .twitter-info {
+      width: 10em;
+      margin-left: 3.5em;
+      margin-right: 3.5em; }
+
+.speakers-panel {
+  height: 35em;
+  margin: 0 auto; }
+  .speakers-panel .speakers-div {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .speakers-panel .speakers-div .speaker-tile {
+      display: inline-block;
+      margin-right: 1%;
+      margin-left: 1%; }
+    .speakers-panel .speakers-div .speaker-avatar {
+      border-radius: 100%;
+      border: 2px solid #00D2FF; }
+    .speakers-panel .speakers-div .speaker-tile .speaker-name {
+      text-align: center;
+      color: #888888;
+      font-size: 1.2em; }
+    .speakers-panel .speakers-div .speaker-icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .speakers-panel .speakers-div .speaker-icons i {
+        font-size: 1.5em;
+        color: #00D2FF;
+        text-align: center;
+        padding: 0em 0.2em 0em 0.2em; }
+
+.schedule-panel {
+  height: 55em;
+  margin: 0 auto;
+  background-color: rgba(0, 210, 255, 0.4); }
+
+/* ---- Timeline ---- */
+/*section {
+    background: rgba(255,255,255,0.9);
+    padding-right: 85px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100%;
+    width: 60%;
+    margin: auto;
+    margin-top: -20px;
+    border-radius: 5px;
+    border: 1px solid #666;
+}*/
+div.comments {
+  /*border: 1px dashed black;*/ }
+
+.comment {
+  overflow: hidden;
+  padding: 0 0 1em;
+  margin: 0 0 1em;
+  margin-left: 40px;
+  *zoom: 1;
+  width: 80%; }
+
+.comment-img {
+  float: left;
+  margin-right: 33px;
+  border-radius: 100%;
+  overflow: hidden; }
+
+.comment-img img {
+  display: block; }
+
+.comment-body {
+  overflow: hidden; }
+
+.comment .text {
+  padding: 10px;
+  /*border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    background: #fff;*/ }
+
+.comment .text p:last-child {
+  margin: 0; }
+
+.comment .attribution {
+  margin: 0.5em 0 0;
+  font-size: 14px;
+  color: #666; }
+
+/* Decoration */
+.comments, .comment {
+  position: relative; }
+
+.comments:before, .comment:before, .comment .text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 65px; }
+
+.comments:before {
+  width: 3px;
+  left: 105px;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.1); }
+
+.comment:before {
+  width: 9px;
+  height: 9px;
+  border: 3px solid #fff;
+  border-radius: 100px;
+  margin: 16px 0 0 -6px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  background: #ccc; }
+
+.comment:hover {
+  /*  cursor: url('../images/FB_CUR.cur');  See the result on http://lab.web-gate.fr/timeline/ */
+  cursor: cell;
+  /* This line is for the cursor */ }
+
+.comment:hover:before {
+  background: #3b5998; }
+
+/*.comment .text:before {
+    top: 18px;
+    left: 78px;
+    width: 9px;
+    height: 9px;
+    border-width: 0 0 1px 1px;
+    border-style: solid;
+    border-color: #e5e5e5;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}*/
+.sponsors-panel {
+  height: 25em;
+  background-color: white;
+  text-align: center; }
+  .sponsors-panel .sponsor-img {
+    height: 10em;
+    margin: 0em 1em 0em 1em; }
+
+.contact-panel {
+  height: 40em;
+  margin: 0 auto;
+  background-color: rgba(0, 210, 255, 0.4); }
+  .contact-panel p {
+    margin-top: 0px; }
+  .contact-panel .col-span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .contact-panel .maps {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 40%;
+    max-height: 100%;
+    border: solid 3px white; }
+  .contact-panel .contact-form {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 40%; }
+    .contact-panel .contact-form .contact-input {
+      max-width: 100%;
+      width: 100%;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      border-bottom: solid 3px white;
+      font-size: 1em;
+      padding: 0.2em 0em 0.2em 0.2em;
+      font-family: "Lato", sans-serif;
+      font-weight: 300; }
+    .contact-panel .contact-form p:last-child {
+      margin-bottom: 0; }
+  .contact-panel .submit-btn {
+    border: solid 3px white;
+    padding: 0.5em 2em 0.5em 2em;
+    font-size: 1em;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    background-color: transparent;
+    text-align: center;
+    color: white; }
+  .contact-panel .submit-btn:hover {
+    font-weight: 400;
+    background-color: #00D2FF;
+    color: white; }
+
+.ticket-section {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  text-align: left; }
+  .ticket-section div {
+    width: 800px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    background-color: rgba(0, 210, 255, 0.5);
+    border-bottom: solid 3px rgba(255, 255, 255, 0.8); }
+  .ticket-section h2 {
     font-size: 2em;
     text-align: center;
     margin: 0 auto;
-    border-bottom: solid 2px #888888;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.8);
     padding-top: 1em;
     padding-bottom: 0.5em;
     margin-bottom: 1.5em;
-    width: 200px;
-    color: #888888; }
-  .header {
-    background-color: rgba(0, 0, 0, 0.4);
-    border-top: solid 0.3em #00D2FF; }
-    .header nav {
-      padding-top: 1em;
-      padding-bottom: 1em;
-      text-align: center; }
-      .header nav a {
-        text-decoration: none;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-        vertical-align: middle;
-        color: white;
-        font-weight: 300; }
-      .header nav a:hover {
-        color: #00D2FF;
-        font-weight: bolder;
-        border-bottom: solid 2px #00D2FF;
-        padding-bottom: 1em; }
-  .landing-panel {
-    background: url("/images/cityscape.jpg");
-    background-size: cover;
-    height: 50em;
-    text-align: center; }
-    .landing-panel .logo {
-      padding-top: 2em; }
-    .landing-panel .dates {
-      padding-bottom: 0.5em;
-      font-size: 2em;
-      color: #D0D0D0; }
-      .landing-panel .dates p {
-        padding: 0; }
-    .landing-panel p {
-      color: white; }
-    .landing-panel .buy-tkts-btn {
-      border: solid 0.2em #00D2FF;
-      padding: 0.6em 3em 0.6em 3em;
-      background-color: rgba(0, 0, 0, 0.3);
-      color: #00D2FF;
-      font-size: 1.2em;
-      margin-top: 2em; }
-    .landing-panel .buy-tkts-btn:hover {
-      background-color: #00D2FF;
-      color: white;
-      transition: 0.3s;
-      font-weight: bolder; }
-    .landing-panel .down-btn {
-      display: block;
-      margin: 0 auto;
-      outline: none;
-      border: none;
-      background-color: transparent;
-      color: rgba(255, 255, 255, 0.8);
-      font-size: 2em;
-      padding-top: 5em; }
-  .fa-chevron-down {
-    animation-name: fa-chevron-down;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out; }
-  @keyframes fa-chevron-down {
-    from {
-      transform: translate(0, 0); }
-    65% {
-      transform: translate(0, 15px); }
-    to {
-      transform: translate(0, 0); } }
-  .twitter-panel {
-    height: 35em;
-    margin: 0 auto;
-    background-color: rgba(0, 210, 255, 0.4);
-    text-align: center;
-    font-weight: 300; }
-    .twitter-panel .twitter-sections {
-      display: flex;
-      flex-direction: row;
-      justify-content: center; }
-      .twitter-panel .twitter-sections .twitter-section-title {
-        font-weight: 400; }
-      .twitter-panel .twitter-sections .twitter-info {
-        width: 10em;
-        margin-left: 3.5em;
-        margin-right: 3.5em; }
-  .speakers-panel {
-    height: 35em;
-    margin: 0 auto; }
-    .speakers-panel .speakers-div {
-      margin-top: 5em;
-      display: flex;
-      flex-direction: row;
-      justify-content: center; }
-      .speakers-panel .speakers-div .speaker-tile {
-        display: inline-block;
-        margin-right: 1%;
-        margin-left: 1%; }
-      .speakers-panel .speakers-div .speaker-avatar {
-        border-radius: 100%;
-        border: 2px solid #00D2FF; }
-      .speakers-panel .speakers-div .speaker-tile .speaker-name {
-        text-align: center;
-        color: #888888;
-        font-size: 1.2em; }
-      .speakers-panel .speakers-div .speaker-icons {
-        display: flex;
-        flex-direction: row;
-        justify-content: center; }
-        .speakers-panel .speakers-div .speaker-icons i {
-          font-size: 1.5em;
-          color: #00D2FF;
-          text-align: center;
-          padding: 0em 0.2em 0em 0.2em; }
-  .schedule-panel {
-    height: 40em;
-    margin: 0 auto;
-    background-color: rgba(0, 210, 255, 0.4); }
-  .sponsors-panel {
-    height: 25em;
-    background-color: white;
-    text-align: center; }
-    .sponsors-panel .sponsor-img {
-      height: 10em;
-      margin: 0em 1em 0em 1em; }
-  .contact-panel {
-    height: 40em;
-    margin: 0 auto;
-    background-color: rgba(0, 210, 255, 0.4); }
-    .contact-panel p {
-      margin-top: 0px; }
-    .contact-panel .col-span {
-      display: flex;
-      flex-direction: row;
-      justify-content: center; }
-    .contact-panel .maps {
-      margin-left: 2%;
-      margin-right: 2%;
-      width: 40%;
-      max-height: 100%;
-      border: solid 3px white; }
-    .contact-panel .contact-form {
-      margin-left: 2%;
-      margin-right: 2%;
-      width: 40%; }
-      .contact-panel .contact-form .contact-input {
-        max-width: 100%;
-        width: 100%;
-        background-color: transparent;
-        outline: none;
-        border: none;
-        border-bottom: solid 3px white;
-        font-size: 1em;
-        padding: 0.2em 0em 0.2em 0.2em;
-        font-family: "Lato", sans-serif;
-        font-weight: 300; }
-      .contact-panel .contact-form p:last-child {
-        margin-bottom: 0; }
-    .contact-panel .submit-btn {
-      border: solid 3px white;
-      padding: 0.5em 2em 0.5em 2em;
-      font-size: 1em;
-      font-family: "Lato", sans-serif;
-      font-weight: 400;
-      background-color: transparent;
-      text-align: center;
-      color: white; }
-    .contact-panel .submit-btn:hover {
-      font-weight: 400;
-      background-color: #00D2FF;
-      color: white; } }
+    width: 300px;
+    color: rgba(255, 255, 255, 0.8); }
+
+.ticket-section:target {
+  opacity: 1;
+  pointer-events: auto; }
+
+.close {
+  color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  text-decoration: none;
+  font-size: 1.5em; }
+
+.close:hover {
+  color: #00D2FF;
+  transition: 0.2s; }

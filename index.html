@@ -12,7 +12,7 @@
 <body>
 
 <section class="landing-panel">
-  <section class="header">
+  <div class="header">
     <nav>
       <a href="#">HOME</a>
       <a href="#twitter">TWITTER</a>
@@ -21,7 +21,7 @@
       <a href="#sponsors">SPONSORS</a>
       <a href="#contact">CONTACT</a>
     </nav>
-  </section>
+  </div>
 
   <img src="/images/logo.svg" alt="" class="logo">
   <div class="dates">
@@ -29,7 +29,41 @@
     <p>10 SEPTEMBER 2015</p>
 
   </div>
-  <a href="#" class="buy-tkts-btn">TICKETS</a>
+
+<!-- MODEL SECTION -->
+  
+  <a href="#openModal" class="buy-tkts-btn">BUY TICKETS</a>
+
+  <div id="openModal" class="ticket-section">
+    <div>
+      <a href="#close" title="Close" class="close"><i class="fa fa-times-circle"></i></a>
+      <h2>BUY TICKETS</h2>
+      
+      <form action="">
+        <p><input type="text" placeholder="Full Name"></p>
+        <p>
+          <input type="text" placeholder="Email">
+          <input type="text" placeholder="Contact Number">
+        </p>
+        <p>
+          <label for="">Number of Tickets</label>
+          <select name="" id="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        <p>
+          <button>CONFIRM</button>
+        </p>
+      </form>
+
+    </div>
+  </div>
+
+<!-- END MODAL SECTION  -->
+
   <a href="#twitter" class="down-btn"><i class="fa fa-chevron-down"></i></a>
 </section>
 
@@ -124,6 +158,77 @@
 <section class="schedule-panel">
   <h2 id="schedule" class="panel-heading">SCHEDULE</h2>
   
+  <div class="comments">
+    <article class="comment">
+      <a class="comment-img" href="#non">
+        <img src="https://d13yacurqjgara.cloudfront.net/users/96387/avatars/normal/2e28f96f71541106015418d632127b0b.jpg?1441138213" alt="" width="50" height="50" />
+      </a>
+      <div class="comment-body">
+        <div class="text">
+          <p>10:00am</p>
+          <p>I heard the word of God, and it was Ruby...</p>
+        </div>
+      </div>
+    </article>
+    <article class="comment">
+      <a class="comment-img" href="#non">
+        <img src="https://d13yacurqjgara.cloudfront.net/users/2489/avatars/normal/avatar.jpg?1391435914" alt="" width="50" height="50" />
+      </a>
+      <div class="comment-body">
+        <div class="text">
+          <p>10:05am</p>
+          <p>To API or not API, that is the question.</p>
+        </div>
+      </div>
+    </article>
+    <article class="comment">
+      <a class="comment-img" href="#non">
+        <img src="https://d13yacurqjgara.cloudfront.net/users/4605/avatars/normal/me-compressed.png?1376845005" alt="" width="50" height="50" />
+      </a>
+      <div class="comment-body">
+        <div class="text">
+          <p>10:10am</p>
+          <p>Twitterbot == Twitterbot</p>
+        </div>
+      </div>
+    </article>
+    <article class="comment">
+      <a class="comment-img" href="#non">
+        <img src="https://d13yacurqjgara.cloudfront.net/users/4701/avatars/normal/f9c5d90c9b549a0ded5722c416260e45.jpg?1422563264" alt="" width="50" height="50" />
+      </a>
+      <div class="comment-body">
+        <div class="text">
+          <p>10:15am</p>
+          <p>Super styling: CSS tips and tricks.</p>
+        </div>
+      </div>
+    </article>
+    <article class="comment">
+      <a class="comment-img" href="#non">
+        <img src="https://d13yacurqjgara.cloudfront.net/users/24078/avatars/normal/8a2d7a844dd0168a0a425d7e5af0501f.jpg?1427572246" alt="" width="50" height="50" />
+      </a>
+      <div class="comment-body">
+        <div class="text">
+          <p>10:25am</p>
+          <p>My life as a cyborg.</p>
+        </div>
+      </div>
+    </article>
+    <article class="comment">
+      <a class="comment-img" href="#non">
+        <img src="https://d13yacurqjgara.cloudfront.net/users/11867/avatars/normal/95017d34c19948a322f660a5e4e6f6ae.jpg?1419025083" alt="" width="50" height="50" />
+      </a>
+      <div class="comment-body">
+        <div class="text">
+          <p>10:25am</p>
+          <p>Do what I say not what I do: 10 tips for founders.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+
+
+
 </section>
 
 <section class="sponsors-panel">

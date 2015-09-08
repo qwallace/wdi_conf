@@ -1,6 +1,7 @@
 $twitter-blue: #55ACEE;
 $body-font: 'Lato', sans-serif;
 $light-opacity: rgba(255, 255, 255, 0.8);
+$dark-blue-opacity: rgba(0, 210, 255, 0.5);
 
 
 $light-grey: #D0D0D0;
@@ -9,7 +10,7 @@ $blue: #00D2FF;
 $sponsor-img-grey: #D0D0D0;
 $background-color: rgba(0, 210, 255, 0.4);
 
-@media screen and (max-width: 1500px) {
+// @media screen and (max-width: 1500px) {
   
 // ALL PAGES =======================================================
   body {
@@ -229,13 +230,97 @@ $background-color: rgba(0, 210, 255, 0.4);
   }
 
 // SCHEDULE =======================================================
-
   .schedule-panel {
-    height: 40em;
+    height: 55em;
     margin: 0 auto;
     background-color: $background-color;
-
   }
+  /* ---- Timeline ---- */
+  /*section {
+    background: rgba(255,255,255,0.9);
+    padding-right: 85px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100%;
+    width: 60%;
+    margin: auto;
+    margin-top: -20px;
+    border-radius: 5px;
+    border: 1px solid #666;
+}*/
+div.comments {
+  /*border: 1px dashed black;*/
+}
+.comment {
+    overflow: hidden;
+    padding: 0 0 1em;
+    margin: 0 0 1em;
+    margin-left: 40px;
+    *zoom: 1;
+    width: 80%;
+}
+.comment-img {
+    float: left;
+    margin-right: 33px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.comment-img img { display: block }
+.comment-body { overflow: hidden }
+.comment .text {
+    padding: 10px;
+    /*border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    background: #fff;*/
+}
+.comment .text p:last-child { margin: 0 }
+.comment .attribution {
+    margin: 0.5em 0 0;
+    font-size: 14px;
+    color: #666;
+}
+/* Decoration */
+.comments, .comment { position: relative }
+.comments:before, .comment:before, .comment .text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 65px;
+}
+.comments:before {
+    width: 3px;
+    left: 105px;
+    bottom: 0px;
+    background: rgba(0,0,0,0.1);
+}
+.comment:before {
+    width: 9px;
+    height: 9px;
+    border: 3px solid #fff;
+    border-radius: 100px;
+    margin: 16px 0 0 -6px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2), inset 0 1px 1px rgba(0,0,0,0.1);
+    background: #ccc;
+}
+.comment:hover {
+    /*  cursor: url('../images/FB_CUR.cur');  See the result on http://lab.web-gate.fr/timeline/ */
+    cursor: cell; /* This line is for the cursor */
+}
+.comment:hover:before { background: #3b5998 }
+/*.comment .text:before {
+    top: 18px;
+    left: 78px;
+    width: 9px;
+    height: 9px;
+    border-width: 0 0 1px 1px;
+    border-style: solid;
+    border-color: #e5e5e5;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}*/
 
 // SPONSORS =======================================================
 
@@ -327,7 +412,70 @@ $background-color: rgba(0, 210, 255, 0.4);
 
 }
 
+// }
+
+// MODAL ================
+.ticket-section {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  text-align: left;
+  
+  div {
+    width: 800px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    // border-radius: 10px;
+    background-color: $dark-blue-opacity;
+    border-bottom: solid 3px $light-opacity;
+  }
+
+
+  h2 {
+    font-size: 2em;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: solid 2px $light-opacity;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1.5em;
+    width: 300px;
+    color: $light-opacity;
+  }
+
 }
+
+.ticket-section:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.close {
+  color: $light-opacity;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.close:hover { 
+  color: $blue; 
+  transition: 0.2s;
+}
+
+
 
 
 
