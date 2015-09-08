@@ -235,94 +235,11 @@ body {
         padding: 0em 0.2em 0em 0.2em; }
 
 .schedule-panel {
-  height: 55em;
+  height: 50em;
   margin: 0 auto;
-  background-color: rgba(0, 210, 255, 0.4); }
-
-/* ---- Timeline ---- */
-/*section {
-    background: rgba(255,255,255,0.9);
-    padding-right: 85px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    height: 100%;
-    width: 60%;
-    margin: auto;
-    margin-top: -20px;
-    border-radius: 5px;
-    border: 1px solid #666;
-}*/
-div.comments {
-  /*border: 1px dashed black;*/ }
-
-.comment {
-  overflow: hidden;
-  padding: 0 0 1em;
-  margin: 0 0 1em;
-  margin-left: 40px;
-  *zoom: 1;
-  width: 80%; }
-
-.comment-img {
-  float: left;
-  margin-right: 33px;
-  border-radius: 100%;
-  overflow: hidden; }
-
-.comment-img img {
-  display: block; }
-
-.comment-body {
-  overflow: hidden; }
-
-.comment .text {
-  padding: 10px;
-  /*border: 1px solid #e5e5e5;
-    border-radius: 5px;
-    background: #fff;*/ }
-
-.comment .text p:last-child {
-  margin: 0; }
-
-.comment .attribution {
-  margin: 0.5em 0 0;
-  font-size: 14px;
-  color: #666; }
-
-/* Decoration */
-.comments, .comment {
-  position: relative; }
-
-.comments:before, .comment:before, .comment .text:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 65px; }
-
-.comments:before {
-  width: 3px;
-  left: 105px;
-  bottom: 0px;
-  background: rgba(0, 0, 0, 0.1); }
-
-.comment:before {
-  width: 9px;
-  height: 9px;
-  border: 3px solid #fff;
-  border-radius: 100px;
-  margin: 16px 0 0 -6px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(0, 0, 0, 0.1);
-  background: #ccc; }
-
-.comment:hover {
-  /*  cursor: url('../images/FB_CUR.cur');  See the result on http://lab.web-gate.fr/timeline/ */
-  cursor: cell;
-  /* This line is for the cursor */ }
-
-.comment:hover:before {
-  background: #3b5998; }
-
-/*.comment .text:before {
+  background-color: rgba(0, 210, 255, 0.4);
+  /* Decoration */
+  /*.comment .text:before {
     top: 18px;
     left: 78px;
     width: 9px;
@@ -335,7 +252,73 @@ div.comments {
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
-}*/
+}*/ }
+  .schedule-panel div.comments {
+    font-weight: 300;
+    width: 650px;
+    margin: 0 auto; }
+  .schedule-panel .comment {
+    overflow: hidden;
+    padding: 0 0 1em;
+    margin: 0 0 1em;
+    margin-left: 40px;
+    *zoom: 1;
+    width: 80%; }
+  .schedule-panel .comment-img {
+    float: left;
+    margin-right: 70px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-top: 5px; }
+  .schedule-panel .comment-img img {
+    display: block; }
+  .schedule-panel .comment-body {
+    overflow: hidden; }
+  .schedule-panel .comment .text {
+    padding-right: 10px;
+    /*border: 1px solid #e5e5e5;
+      border-radius: 5px;
+      background: #fff;*/ }
+    .schedule-panel .comment .text p {
+      margin-top: 0px;
+      margin-bottom: 3px;
+      color: #888888; }
+      .schedule-panel .comment .text p i {
+        padding-right: 10px;
+        color: white; }
+  .schedule-panel .comment .text p:last-child {
+    margin: 0; }
+  .schedule-panel .comment .attribution {
+    margin: 0.5em 0 0;
+    font-size: 14px;
+    color: #666; }
+  .schedule-panel .comments, .schedule-panel .comment {
+    position: relative; }
+  .schedule-panel .comments:before, .schedule-panel .comment:before, .schedule-panel .comment .text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 65px; }
+  .schedule-panel .comments:before {
+    width: 3px;
+    left: 120px;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.1); }
+  .schedule-panel .comment:before {
+    width: 9px;
+    height: 9px;
+    border: 3px solid #fff;
+    border-radius: 100px;
+    margin: 25px 0 0 9px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(0, 0, 0, 0.1);
+    background: #ccc; }
+  .schedule-panel .comment:hover {
+    /*  cursor: url('../images/FB_CUR.cur');  See the result on http://lab.web-gate.fr/timeline/ */
+    cursor: pointer;
+    /* This line is for the cursor */ }
+  .schedule-panel .comment:hover:before {
+    background: #00D2FF; }
+
 .sponsors-panel {
   height: 25em;
   background-color: white;

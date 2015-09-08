@@ -23,7 +23,7 @@ gulp.task('server', function() {
 });
 
 gulp.task('html', function() {
-  gulp.src('./views/*.html')
+  gulp.src('./*.html')
     .pipe( connect.reload() )
 });
 
