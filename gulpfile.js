@@ -3,7 +3,7 @@ var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var connect = require('gulp-connect');
 // var browserify = require('browserify');
-// var autoprefixer = require('gulp-autoprefixer');
+var autoprefixer = require('gulp-autoprefixer');
 
 // var watchify = require('watchify');
 // var source = require('vinyl-source-stream');
@@ -23,21 +23,21 @@ gulp.task('server', function() {
 });
 
 gulp.task('html', function() {
-  gulp.src('./*.html')
+  gulp.src('./views/*.html')
     .pipe( connect.reload() )
 });
 
 gulp.task('sass', function() {
-  gulp.src('./*.scss')
+  gulp.src('./public/scss/base.scss')
     .pipe( sass() )
-    // .pipe( autoprefixer() )
-    .pipe( gulp.dest('css') )
+    .pipe( autoprefixer() )
+    .pipe( gulp.dest('./public/css') )
     .pipe( connect.reload() );
 });
 
 gulp.task('watch', function() {
-  gulp.watch('./*.js', ['bundle']);
-  gulp.watch('./*.scss', ['sass']);
+  gulp.watch('./public/javascript/*.js', ['bundle']);
+  gulp.watch('./public/scss/*.scss', ['sass']);
   gulp.watch('./*.html', ['html']);
 })
 

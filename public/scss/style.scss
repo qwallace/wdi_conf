@@ -1,0 +1,78 @@
+// ALL PAGES =======================================================
+  body {
+    margin: 0 auto;
+  }
+
+  a, a:hover, a:visited, a:active {
+    text-decoration: none;
+  }
+
+  body {
+    // background-color: $blue;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+  }
+
+
+  .panel-heading {
+    font-size: 2em;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: solid 2px $dark-grey;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1.5em;
+    width: 200px;
+    color: $dark-grey;
+  }
+
+  .header {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-top: solid 0.3em $blue;
+
+    nav {
+      padding-top: 1em;
+      padding-bottom: 1em;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        vertical-align: middle;
+        color: white;
+        font-weight: 300;
+      }
+
+      a:hover {
+        color: $blue;
+        font-weight: bolder;
+        border-bottom: solid 2px $blue;
+        padding-bottom: 1em;
+        // transition: 0.2s;
+      }
+    }
+
+  } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// }
+
+
+
+
+
+
+
+

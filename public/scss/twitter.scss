@@ -1,0 +1,27 @@
+  // TWITTER =======================================================
+
+  .twitter-panel {
+    height: 35em;
+    margin: 0 auto;
+    background-color: $background-color;
+    text-align: center;
+    font-weight: 300;
+  
+    .twitter-sections {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .twitter-section-title {
+        font-weight: 400;
+      }
+
+      .twitter-info {
+        width: 10em;
+        margin-left: 3.5em;
+        margin-right: 3.5em;
+      }
+
+    }
+
+  }
