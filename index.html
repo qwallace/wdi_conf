@@ -8,69 +8,81 @@
   <!-- <link rel="stylesheet" href="/public/css/landing.css"> -->
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <script src="bundle.js"></script>
+  <script src="/public/javascript/jquery.js"></script>
 </head>
 
 <body>
 
-<section class="landing-panel">
-  <div class="header">
-    <nav>
-      <a href="#">HOME</a>
-      <a href="#twitter">TWITTER</a>
-      <a href="#speakers">SPEAKERS</a>
-      <a href="#schedule">SCHEDULE</a>
-      <a href="#sponsors">SPONSORS</a>
-      <a href="#contact">CONTACT</a>
-    </nav>
-  </div>
 
-  <img src="/public/images/logo.svg" alt="" class="logo">
-  <div class="dates">
-    <!-- <p>9am - 5pm</p> -->
-    <p>10 SEPTEMBER 2015</p>
+<header>
+  <section class="landing-panel" id="landing-page">
 
-  </div>
-
-<!-- MODEL SECTION -->
-  
-  <a href="#openModal" class="buy-tkts-btn">BUY TICKETS</a>
-
-  <div id="openModal" class="ticket-section">
-    <div>
-      <a href="#close" title="Close" class="close"><i class="fa fa-times-circle"></i></a>
-      <h2>BUY TICKETS</h2>
-      
-      <form action="">
-        <p><input type="text" placeholder="Full Name"></p>
-        <p>
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="Contact Number">
-        </p>
-        <p>
-          <label for="">Number of Tickets</label>
-          <select name="" id="">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        <p>
-          <button>CONFIRM</button>
-        </p>
-      </form>
+    <img src="/public/images/logo.svg" alt="" class="logo">
+    <div class="dates">
+      <!-- <p>9am - 5pm</p> -->
+      <p>10 SEPTEMBER 2015</p>
 
     </div>
-  </div>
 
-<!-- END MODAL SECTION  -->
+  <!-- MODEL SECTION -->
+    
+    <a href="#openModal" class="buy-tkts-btn">BUY TICKETS</a>
 
-  <a href="#twitter" class="down-btn"><i class="fa fa-chevron-down"></i></a>
-</section>
+    <div id="openModal" class="ticket-section">
+      <div>
+        <a href="#close" title="Close" class="close"><i class="fa fa-times-circle"></i></a>
+        <h2>BUY TICKETS</h2>
+        
+        <form action="">
+          <p><input type="text" placeholder="Full Name"></p>
+          <p>
+          <p><input type="text" placeholder="@Twitter_Username"></p>
+            <p><input type="text" placeholder="Email"></p>
+            <p><input type="text" placeholder="Contact Number"></p>
+          <p>
+            <label for="">Number of Tickets</label>
+            <select name="ticket-qty" id="ticket-qty" class="ticket-qty">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="5">6</option>
+            </select>
+          </p>
+          <p>
+            Admission Fee: FREE
+          </p>
 
-<section class="twitter-panel">
-  <h2 id="twitter" class="panel-heading"><img src="/public/images/twitter-icon.svg" alt="" class="twitter-icon"></a></h2>
+            <button class="buy-tkts-sml">CONFIRM</button>
+          </p>
+        </form>
+
+      </div>
+    </div>
+
+  <!-- END MODAL SECTION  -->
+
+    <a href="#twitter" class="down-btn"><i class="fa fa-chevron-down"></i></a>
+  </section>
+</header>
+
+<div class="nav-header">
+    <nav class="main-nav">
+      <a href="#" class="nav-home">HOME</a>
+      <a href="#twitter" class="nav-twitter">TWITTER</a>
+      <a href="#speakers" class="nav-speakers">SPEAKERS</a>
+      <a href="#schedule" class="nav-schedule">SCHEDULE</a>
+      <a href="#sponsors" class="nav-sponsors">SPONSORS</a>
+      <a href="#contact" class="nav-contact">CONTACT</a>
+    </nav>
+</div>
+
+
+
+<div class="main">
+<section class="twitter-panel" id="twitter">
+  <h2  class="panel-heading"><img src="/public/images/twitter-icon.svg" alt="" class="twitter-icon"></a></h2>
   
     <p>Interact with us at @WDIConf for the latest information on the event.</p>
   
@@ -96,8 +108,8 @@
   </div>
 </section>
 
-<section class="speakers-panel">
-  <h2 id="speakers" class="panel-heading">SPEAKERS</h2>
+<section class="speakers-panel" id="speakers">
+  <h2  class="panel-heading">SPEAKERS</h2>
   <div class="speakers-div">
       <div class="speaker-tile">
         <img src="https://d13yacurqjgara.cloudfront.net/users/96387/avatars/normal/2e28f96f71541106015418d632127b0b.jpg?1441138213" class="speaker-avatar" alt="" />
@@ -157,8 +169,8 @@
   
 </section>
 
-<section class="schedule-panel">
-  <h2 id="schedule" class="panel-heading">SCHEDULE</h2>
+<section class="schedule-panel" id="schedule">
+  <h2 class="panel-heading">SCHEDULE</h2>
   
   <div class="comments">
     <article class="comment">
@@ -239,8 +251,8 @@
 
 </section>
 
-<section class="sponsors-panel">
-  <h2 id="sponsors" class="panel-heading">SPONSORS</h2>
+<section class="sponsors-panel" id="sponsors">
+  <h2  class="panel-heading">SPONSORS</h2>
   <img src="/public/images/slack.svg" alt="Slack" class="sponsor-img">
   <img src="/public/images/github.svg" alt="Github" class="sponsor-img">
   <img src="/public/images/ga.svg" alt="General Assembly" class="sponsor-img">
@@ -248,8 +260,8 @@
   
 </section>
 
-<section class="contact-panel">
-  <h2 id="contact" class="panel-heading">CONTACT</h2>
+<section class="contact-panel"  id="contact">
+  <h2 class="panel-heading">CONTACT</h2>
   <div class='col-span'>
     <div class="contact-form">
       <p>
@@ -274,7 +286,14 @@
   </div>
   
 </section>
+</div>
+<section class="footer">
+  <p class="footer-text">&#169; General Assembly 2015</p>
+  <p class="footer-text">Project by Vii-Minds</p>
+</section>
 
+    <script src="/public/javascript/scroll.js"></script>
+    <script src="/public/javascript/sticky-nav.js"></script>
     <script src="/public/javascript/map.js"></script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap">

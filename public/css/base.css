@@ -12,6 +12,7 @@ body {
   font-size: 2em;
   text-align: center;
   margin: 0 auto;
+  padding-top: 3em;
   border-bottom: solid 2px #888888;
   padding-top: 1em;
   padding-bottom: 0.5em;
@@ -19,25 +20,34 @@ body {
   width: 200px;
   color: #888888; }
 
-.header {
-  background-color: rgba(0, 0, 0, 0.4);
-  border-top: solid 0.3em #00D2FF; }
-  .header nav {
+.nav-header {
+  background-color: white; }
+  .nav-header nav {
     padding-top: 1em;
     padding-bottom: 1em;
     text-align: center; }
-    .header nav a {
+    .nav-header nav a {
       text-decoration: none;
       padding-left: 0.5em;
       padding-right: 0.5em;
       vertical-align: middle;
-      color: white;
+      color: #888888;
       font-weight: 300; }
-    .header nav a:hover {
+    .nav-header nav a:hover {
       color: #00D2FF;
       font-weight: bolder;
       border-bottom: solid 2px #00D2FF;
       padding-bottom: 1em; }
+
+.footer {
+  text-align: center;
+  background-color: #D0D0D0;
+  height: 4em;
+  color: #888888; }
+  .footer .footer-text {
+    font-weight: 300;
+    margin: 0;
+    padding-top: 0.5em; }
 
 .landing-panel {
   background: url("/public/images/cityscape.jpg");
@@ -45,7 +55,7 @@ body {
   height: 50em;
   text-align: center; }
   .landing-panel .logo {
-    padding-top: 2em; }
+    padding-top: 5em; }
   .landing-panel .dates {
     padding-bottom: 0.5em;
     font-size: 2em;
@@ -130,14 +140,46 @@ body {
     padding: 5px 20px 13px 20px;
     background-color: rgba(0, 210, 255, 0.5);
     border-bottom: solid 3px rgba(255, 255, 255, 0.8); }
+    .ticket-section div form {
+      width: 300px;
+      margin: 0 auto; }
+      .ticket-section div form input {
+        width: 100%;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        border-bottom: solid 2px white;
+        color: #D0D0D0;
+        font-size: 1em; }
+      .ticket-section div form ::-webkit-input-placeholder {
+        color: #D0D0D0; }
+      .ticket-section div form input:focus, .ticket-section div form input:hover {
+        border-bottom: solid 2px #00D2FF;
+        color: white; }
+      .ticket-section div form .buy-tkts-sml {
+        border-radius: 0;
+        border: solid 2px #66FFCC;
+        background-color: transparent;
+        color: #66FFCC;
+        font-size: 1em;
+        width: 100%;
+        margin-top: 1em;
+        margin-bottom: 1em; }
+      .ticket-section div form .buy-tkts-sml:hover {
+        background-color: transparent;
+        cursor: pointer;
+        border: solid 2px white;
+        color: white; }
+      .ticket-section div form select {
+        border-radius: 0px; }
+        .ticket-section div form select option {
+          border-radius: 0px; }
   .ticket-section h2 {
     font-size: 2em;
     text-align: center;
     margin: 0 auto;
-    border-bottom: solid 2px rgba(255, 255, 255, 0.8);
     padding-top: 1em;
-    padding-bottom: 0.5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     width: 300px;
     color: rgba(255, 255, 255, 0.8); }
 
@@ -187,7 +229,8 @@ body {
 
 .speakers-panel {
   height: 35em;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-top: 2.5em; }
   .speakers-panel .speakers-div {
     margin-top: 5em;
     display: -webkit-box;
@@ -238,6 +281,7 @@ body {
   height: 50em;
   margin: 0 auto;
   background-color: rgba(0, 210, 255, 0.4);
+  padding-top: 2.5em;
   /* Decoration */
   /*.comment .text:before {
     top: 18px;
@@ -322,7 +366,8 @@ body {
 .sponsors-panel {
   height: 25em;
   background-color: white;
-  text-align: center; }
+  text-align: center;
+  padding-top: 2.5em; }
   .sponsors-panel .sponsor-img {
     height: 10em;
     margin: 0em 1em 0em 1em; }
@@ -330,7 +375,9 @@ body {
 .contact-panel {
   height: 40em;
   margin: 0 auto;
-  background-color: rgba(0, 210, 255, 0.4); }
+  padding-top: 2.5em;
+  background-color: rgba(0, 210, 255, 0.4);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4); }
   .contact-panel p {
     margin-top: 0px; }
   .contact-panel .col-span {
@@ -383,3 +430,19 @@ body {
     font-weight: 400;
     background-color: #00D2FF;
     color: white; }
+
+.main-nav, .main {
+  position: relative; }
+
+.main-nav {
+  border-top: solid 0.3em #00D2FF;
+  z-index: 150;
+  color: white; }
+
+.main-nav-scrolled {
+  color: blue;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  width: 100%;
+  top: 0; }

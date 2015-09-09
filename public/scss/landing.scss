@@ -8,7 +8,7 @@
     text-align: center;
     
     .logo {
-      padding-top: 2em;
+      padding-top: 5em;
     }
 
     .dates {
@@ -98,6 +98,57 @@
     // border-radius: 10px;
     background-color: $dark-blue-opacity;
     border-bottom: solid 3px $light-opacity;
+
+    form {
+      width: 300px;
+      margin: 0 auto;
+      
+      input {
+        width: 100%;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        border-bottom: solid 2px white;
+        color: $light-grey;
+        font-size: 1em;
+      }
+      ::-webkit-input-placeholder {
+        color: $light-grey;
+      }
+
+      input:focus, input:hover {
+        border-bottom: solid 2px $blue;
+        color: white;
+      }
+
+      .buy-tkts-sml {
+
+        border-radius: 0;
+        border: solid 2px #66FFCC;
+        background-color: transparent;
+        color: #66FFCC;
+        font-size: 1em;
+        width: 100%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+
+      .buy-tkts-sml:hover {
+        background-color: transparent;
+        cursor: pointer;
+        border: solid 2px white;
+        color: white;
+        // margin: 0 auto;
+      }
+
+      select {
+        border-radius: 0px;
+        option {
+          border-radius: 0px;
+        }
+      }
+
+    }
   }
 
 
@@ -105,10 +156,10 @@
     font-size: 2em;
     text-align: center;
     margin: 0 auto;
-    border-bottom: solid 2px $light-opacity;
+    // border-bottom: solid 2px $light-opacity;
     padding-top: 1em;
-    padding-bottom: 0.5em;
-    margin-bottom: 1.5em;
+    // padding-bottom: 0.5em;
+    margin-bottom: 1em;
     width: 300px;
     color: $light-opacity;
   }
