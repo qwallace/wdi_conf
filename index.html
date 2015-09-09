@@ -3,21 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>WDI CONF 2015</title>
-  <link rel="stylesheet" href="/public/css/base.css">
+  <link rel="stylesheet" href="/build/css/base.css">
   <!-- <link rel="stylesheet" href="/public/css/style.css"> -->
   <!-- <link rel="stylesheet" href="/public/css/landing.css"> -->
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <script src="/public/javascript/jquery.js"></script>
+  <script src="/source/javascript/jquery.js"></script>
+  <script src="/build/javascript/bundle.js"></script>
+
 </head>
 
 <body>
 
-
 <header>
   <section class="landing-panel" id="landing-page">
 
-    <img src="/public/images/logo.svg" alt="" class="logo">
+    <img src="/build/images/logo.svg" alt="" class="logo">
     <div class="dates">
       <!-- <p>9am - 5pm</p> -->
       <p>10 SEPTEMBER 2015</p>
@@ -25,14 +26,14 @@
     </div>
 
   <!-- MODEL SECTION -->
-    
+
     <a href="#openModal" class="buy-tkts-btn">BUY TICKETS</a>
 
     <div id="openModal" class="ticket-section">
       <div>
         <a href="#close" title="Close" class="close"><i class="fa fa-times-circle"></i></a>
         <h2>BUY TICKETS</h2>
-        
+
         <form action="">
           <p><input type="text" placeholder="Full Name"></p>
           <p>
@@ -53,7 +54,7 @@
           <p>
             Admission Fee: FREE
           </p>
-
+          <p>
             <button class="buy-tkts-sml">CONFIRM</button>
           </p>
         </form>
@@ -78,29 +79,27 @@
     </nav>
 </div>
 
-
-
 <div class="main">
 <section class="twitter-panel" id="twitter">
-  <h2  class="panel-heading"><img src="/public/images/twitter-icon.svg" alt="" class="twitter-icon"></a></h2>
-  
+  <h2  class="panel-heading"><a><img src="/build/images/twitter-icon.svg" alt="" class="twitter-icon"></a></h2>
+
     <p>Interact with us at @WDIConf for the latest information on the event.</p>
-  
+
   <div class="twitter-sections">
     <div class="twitter-info">
-      <img src="/public/images/ticket-icon.svg" alt="">
+      <img src="/build/images/ticket-icon.svg" alt="">
       <p class="twitter-section-title">Buy tickets</p>
       <p>Tweet "!tix1" to reserve a ticket for the event.</p>
     </div>
 
     <div class="twitter-info">
-      <img src="/public/images/map-icon.svg" alt="">
+      <img src="/build/images/map-icon.svg" alt="">
       <p class="twitter-section-title">Location</p>
       <p>Tweet "!map" or "!v" for venue details.</p>
     </div>
 
     <div class="twitter-info">
-      <img src="/public/images/date-icon.svg" alt="">
+      <img src="/build/images/date-icon.svg" alt="">
       <p class="twitter-section-title">Time & Date</p>
       <p>Tweet "!d" for date details.</p>
     </div>
@@ -166,12 +165,12 @@
         </div>
       </div>
     </div>
-  
+
 </section>
 
 <section class="schedule-panel" id="schedule">
   <h2 class="panel-heading">SCHEDULE</h2>
-  
+
   <div class="comments">
     <article class="comment">
       <a class="comment-img" href="#non">
@@ -247,17 +246,15 @@
     </article>
   </div>
 
-
-
 </section>
 
 <section class="sponsors-panel" id="sponsors">
   <h2  class="panel-heading">SPONSORS</h2>
-  <img src="/public/images/slack.svg" alt="Slack" class="sponsor-img">
-  <img src="/public/images/github.svg" alt="Github" class="sponsor-img">
-  <img src="/public/images/ga.svg" alt="General Assembly" class="sponsor-img">
-  <img src="/public/images/adobe.svg" alt="Adobe" class="sponsor-img">
-  
+  <img src="/build/images/slack.svg" alt="Slack" class="sponsor-img">
+  <img src="/build/images/github.svg" alt="Github" class="sponsor-img">
+  <img src="/build/images/ga.svg" alt="General Assembly" class="sponsor-img">
+  <img src="/build/images/adobe.svg" alt="Adobe" class="sponsor-img">
+
 </section>
 
 <section class="contact-panel"  id="contact">
@@ -268,7 +265,7 @@
         <input type="text" class="contact-input" placeholder="NAME">
       </p>
       <p>
-        <input type="email" class="contact-input"class="contact-input" placeholder="EMAIL">
+        <input type="email" class="contact-input" placeholder="EMAIL">
       </p>
       <p>
         <input type="number" class="contact-input" placeholder="CONTACT NUMBER">
@@ -284,7 +281,7 @@
     <div class="maps" id="map">
     </div>
   </div>
-  
+
 </section>
 </div>
 <section class="footer">
@@ -292,9 +289,9 @@
   <p class="footer-text">Project by Vii-Minds</p>
 </section>
 
-    <script src="/public/javascript/scroll.js"></script>
-    <script src="/public/javascript/sticky-nav.js"></script>
-    <script src="/public/javascript/map.js"></script>
+    <script src="/source/javascript/scroll.js"></script>
+    <script src="/source/javascript/sticky-nav.js"></script>
+    <script src="/source/javascript/map.js"></script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap">
     </script>

@@ -2,19 +2,19 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var connect = require('gulp-connect');
-// var browserify = require('browserify');
+var browserify = require('browserify');
 var autoprefixer = require('gulp-autoprefixer');
 
-// var watchify = require('watchify');
-// var source = require('vinyl-source-stream');
+var watchify = require('watchify');
+var source = require('vinyl-source-stream');
 
-// var b = watchify(browserify('./app.js'));
-// gulp.task('bundle',function() {
-//   return b.bundle()
-//     .pipe(source('bundle.js'))
-//     .pipe(gulp.dest('build'))
-//     .pipe( connect.reload() );
-// });
+var b = watchify(browserify('./source/javascript/app.js'));
+gulp.task('bundle',function() {
+  return b.bundle()
+    .pipe(source('bundle.js'))
+    .pipe(gulp.dest('./build/javascript'))
+    .pipe( connect.reload() );
+});
 
 gulp.task('server', function() {
   connect.server({
@@ -28,16 +28,16 @@ gulp.task('html', function() {
 });
 
 gulp.task('sass', function() {
-  gulp.src('./public/scss/base.scss')
+  gulp.src('./source/scss/base.scss')
     .pipe( sass() )
     .pipe( autoprefixer() )
-    .pipe( gulp.dest('./public/css') )
+    .pipe( gulp.dest('./build/css') )
     .pipe( connect.reload() );
 });
 
 gulp.task('watch', function() {
-  gulp.watch('./public/javascript/*.js', ['bundle']);
-  gulp.watch('./public/scss/*.scss', ['sass']);
+  gulp.watch('./source/javascript/app.js', ['bundle']);
+  gulp.watch('./source/scss/*.scss', ['sass']);
   gulp.watch('./*.html', ['html']);
 })
 

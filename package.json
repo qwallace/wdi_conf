@@ -8,14 +8,19 @@
   "author": "Jenny",
   "license": "ISC",
   "devDependencies": {
+    "browserify": "^11.0.1",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-browserify": "^0.5.1",
     "gulp-connect": "^2.2.0",
     "gulp-sass": "^2.0.4",
-    "gulp-uglify": "^1.4.0"
+    "gulp-uglify": "^1.4.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.4.0"
   },
   "dependencies": {
+    "backbone": "^1.2.3",
+    "handlebars": "^4.0.2",
     "jquery": "^2.1.4",
     "underscore": "^1.8.3"
   },
